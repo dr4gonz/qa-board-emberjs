@@ -1,0 +1,11 @@
+.answer-tile, .question-tile {
+  border: 1px solid #69C3EA;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.answer-button {
+  margin-top: 5px;
+}
+.nav-title {
+  color: #ED6A5A
+}
