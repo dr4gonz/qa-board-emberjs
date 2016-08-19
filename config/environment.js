@@ -16,6 +16,12 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    firebase: {
+      apiKey: "AIzaSyALTsIvGod5EQvQBl2gK_9Rxf31v8GcoYY",
+      authDomain: "qa-board-emberjs.firebaseapp.com",
+      databaseURL: "https://qa-board-emberjs.firebaseio.com",
+      storageBucket: "qa-board-emberjs.appspot.com",
     }
   };
 
