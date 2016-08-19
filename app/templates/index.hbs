@@ -2,7 +2,7 @@
   <div class="col-md-8">
     {{#link-to 'new-question'}}New Question{{/link-to}}
     {{#each model.questions as |question|}}
-      {{question-tile question=question}}
+      {{index-question-tile question=question}}
     {{/each}}
   </div>
 </div>
