@@ -10,13 +10,13 @@
       <label for="body">Answer</label>
       {{textarea cols="100" rows="5" value=body id="body"}}
     </div>
-    <button {{action 'saveAnswer'}}>Save</button>
+    <button class="btn btn-xs btn-primary" {{action 'saveAnswer'}}>Save</button>
   </form>
 </div>
 {{else}}
 <div class="row">
   <div class="col-md-12 answer-button">
-    <button class="btn btn-xs btn-primary"{{action 'answerFormShow'}}>Answer!</button>
+    <button class="btn btn-xs btn-primary" {{action 'answerFormShow'}}>Answer!</button>
   </div>
 </div>
 {{/if}}
