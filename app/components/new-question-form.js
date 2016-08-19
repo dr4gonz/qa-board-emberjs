@@ -11,6 +11,6 @@ export default Ember.Component.extend({
         date: moment().format('h:mm a, M/D/YYYY'),
       };
       this.sendAction('createPost', params);
-    }
+    },
   }
 });

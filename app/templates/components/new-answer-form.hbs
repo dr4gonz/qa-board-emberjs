@@ -1,0 +1,18 @@
+{{#if addNewAnswer}}
+  <div class='col-md-6 col-md-offset-2'>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Answer</label>
+        {{textarea cols="100" rows="5" value=body id="body"}}
+      </div>
+      <button {{action 'saveAnswer'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+    <button {{action 'answerFormShow'}}>Answer!</button>
+{{/if}}
