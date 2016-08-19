@@ -15,6 +15,8 @@ export default Ember.Component.extend({
         question: this.get('question'),
         vote: 0
       };
+      this.set('author', null);
+      this.set('body', null);
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);
     }
