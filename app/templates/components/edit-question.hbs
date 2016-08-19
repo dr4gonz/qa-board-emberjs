@@ -15,10 +15,13 @@
       <label for="body">Additional Information:</label>
       {{textarea cols="80" rows="5" value=question.body id="body"}}
     </div>
-
-    <button class="btn btn-sm btn-primary" {{action 'updateQuestion' question}}>Publish</button>
   </form>
-  <button name="delete" class="btn btn-small btn-warning" {{action 'deleteQuestion' question}}>Delete</button>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-xs btn-primary" {{action 'updateQuestion' question}}>Publish</button>
+    <button name="delete" class="btn btn-xs btn-danger" {{action 'deleteQuestion' question}}>Delete</button>
+  </div>
 </div>
 {{else}}
 <div class="row">
