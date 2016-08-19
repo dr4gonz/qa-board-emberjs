@@ -1,5 +1,7 @@
 <div class="col-md-12">
+  {{#link-to 'question' question.id}}
   <h3>{{question.title}}</h3>
-  <h5>{{question.author}}</h5>
+  {{/link-to}}
+  <h5>{{question.author}} - {{question.date}}</h5>
   <p>{{question.body}}</p>
 </div>
