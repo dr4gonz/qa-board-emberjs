@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-8">
-    {{#link-to 'new-question'}}New Question{{/link-to}}
+    {{#link-to 'new-question'}}<button class="btn btn-sm btn-primary" name="New Question" >New Question</button>{{/link-to}}
     {{#each model.questions as |question|}}
       {{index-question-tile question=question}}
     {{/each}}
