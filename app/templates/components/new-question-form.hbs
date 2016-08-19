@@ -1,0 +1,19 @@
+<div class="col-md-6">
+  <form>
+    <div class="form-group">
+      <label for="title">Question:</label>
+      {{textarea cols="80" rows="1" value=title id="title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author:</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="body">Additional Information:</label>
+      {{textarea cols="80" rows="5" value=body id="body"}}
+    </div>
+    <button class="btn btn-sm btn-primary" {{action 'createQuestion'}}>Publish</button>
+  </form>
+</div>
